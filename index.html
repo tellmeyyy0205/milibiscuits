@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mily的快乐扭蛋机</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Gaegu:wght@300;400;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'cute': ['"Gaegu"', '"ZCOOL KuaiLe"', 'cursive'],
+              'typewriter': ['"Courier Prime"', 'monospace'],
+            },
+            colors: {
+              'cookie-base': '#F4C47C',
+              'cookie-dark': '#D99F59',
+              'paper-bg': '#FFFBF0',
+              'paper-line': '#E5E5E5',
+              'ink': '#2C2C2C',
+            },
+            animation: {
+              'float': 'float 3s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FEF3C7; /* Amber 100 */
+        background-image: radial-gradient(#FDE68A 2px, transparent 2px);
+        background-size: 32px 32px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
